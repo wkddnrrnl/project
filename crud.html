@@ -81,6 +81,19 @@
                     select();
                 }
             }
+            function select()
+            {
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      r = this.rowIndex;
+                      document.getElementById("bname").value = this.cells[0].innerHTML;
+                      document.getElementById("author").value = this.cells[1].innerHTML;
+                      document.getElementById("price").value = this.cells[2].innerHTML;
+                    };
+                }
+            }
             select();
             function update()
             {
