@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>crud</title>
+    
     <style>
         .booklist{overflow: hidden}
         .style{float: left;}
@@ -10,6 +11,7 @@
         .style2 input{display: block; margin-bottom: 10px; }
         tr{transition:all .25s ease-in-out}
     </style>
+
 </head>
 <body>
 	<h1>BOOK LIST</h1>
@@ -27,17 +29,15 @@
                         <td>27000</td>
                     </tr>
                 </table>
-            </div>
+            </div>                
+            <div class="style style2">
                 Book Name :<input type="text" value="" id="bname">
                 Book Author :<input type="text" value="" id="author">
                 Book Price :<input type="text" value="" id="price">
 
                 <button onclick="creat();">Creat</button>
                 <button onclick="update();">update</button>
-                <button onclick="dele();">Delete</button>
-                
-            <div class="style style2">
-               
+                <button onclick="dele();">Delete</button>   
             </div>
         </div>
 
