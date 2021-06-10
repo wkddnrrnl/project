@@ -61,6 +61,23 @@
                 }
                 return Empty;
             }
+            function creat()
+            {
+                if(!check()){
+                    var newRow = table.insertRow(table.length);
+                    var bn = newRow.insertCell(0);
+                    var ba = newRow.insertCell(1);
+                    var bp = newRow.insertCell(2);
+                    bname = document.getElementById("bname").value;
+                    author = document.getElementById("author").value;
+                    price = document.getElementById("price").value;
+            
+                    bn.innerHTML = bname;
+                    ba.innerHTML = author;
+                    bp.innerHTML = price;
+                    select();
+                }
+            }
         </script>
 
 </body>
