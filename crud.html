@@ -79,6 +79,18 @@
                 }
             }
             select();
+            function update()
+            {
+                var bname = document.getElementById("bname").value;
+                var author = document.getElementById("author").value;
+                var price = document.getElementById("price").value;
+                if(!check()){
+                    table.rows[r].cells[0].innerHTML = bname;
+                    table.rows[r].cells[1].innerHTML = author;
+                    table.rows[r].cells[2].innerHTML = price;
+                }
+            }
+
         </script>
 
 </body>
