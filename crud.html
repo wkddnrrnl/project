@@ -40,6 +40,28 @@
                 <button onclick="dele();">Delete</button>   
             </div>
         </div>
+        <script type="text/javascript">
+            function check()
+            {
+                var Empty = false,
+                    bname = document.getElementById("bname").value,
+                    author = document.getElementById("author").value,
+                    price = document.getElementById("price").value;
+                if(bname === ""){
+                    alert("책 제목을 입력해 주세요");
+                    Empty = true;
+                }
+                else if(author === ""){
+                    alert("책 저자를 입력해 주세요");
+                    Empty = true;
+                }
+                else if(price === ""){
+                    alert("책 가격을 입력해 주세요");
+                    Empty = true;
+                }
+                return Empty;
+            }
+        </script>
 
 </body>
 </html>
