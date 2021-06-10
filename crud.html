@@ -41,6 +41,9 @@
             </div>
         </div>
         <script type="text/javascript">
+            var r;
+            var table = document.getElementById("table");
+
             function check()
             {
                 var Empty = false,
@@ -89,6 +92,13 @@
                     table.rows[r].cells[1].innerHTML = author;
                     table.rows[r].cells[2].innerHTML = price;
                 }
+            }
+            function dele()
+            {
+                table.deleteRow(r);
+                document.getElementById("bname").value = "";
+                document.getElementById("author").value = "";
+                document.getElementById("price").value = "";
             }
 
         </script>
